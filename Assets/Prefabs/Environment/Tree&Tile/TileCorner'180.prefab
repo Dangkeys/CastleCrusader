@@ -8,9 +8,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 685463564422024481, guid: 2a62178ece03d404d96049b7d0b13115, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.21658954
+      objectReference: {fileID: 0}
+    - target: {fileID: 685463564422024481, guid: 2a62178ece03d404d96049b7d0b13115, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.21658954
+      objectReference: {fileID: 0}
+    - target: {fileID: 685463564422024481, guid: 2a62178ece03d404d96049b7d0b13115, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.2264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 685463564422024481, guid: 2a62178ece03d404d96049b7d0b13115, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281808698
+      objectReference: {fileID: 0}
     - target: {fileID: 3193079068726116834, guid: 2a62178ece03d404d96049b7d0b13115, type: 3}
       propertyPath: m_Name
       value: TileCorner'180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4687106366186051372, guid: 2a62178ece03d404d96049b7d0b13115, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4687106366186051372, guid: 2a62178ece03d404d96049b7d0b13115, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4687106366186051372, guid: 2a62178ece03d404d96049b7d0b13115, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4687106366186051372, guid: 2a62178ece03d404d96049b7d0b13115, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4687106366186051372, guid: 2a62178ece03d404d96049b7d0b13115, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 5606169870210310777, guid: 2a62178ece03d404d96049b7d0b13115, type: 3}
       propertyPath: m_LocalPosition.x

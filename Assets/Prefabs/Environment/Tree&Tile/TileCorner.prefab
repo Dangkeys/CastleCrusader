@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6460198731988880309
+--- !u!1001 &1200425363384518775
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,27 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4393504414824958357, guid: 75c5757996026ab48986bfeeb6e2ddb0, type: 3}
       propertyPath: m_Name
-      value: TileStriaghtHorizontal
+      value: TileCorner
       objectReference: {fileID: 0}
-    - target: {fileID: 5882605917448085339, guid: 75c5757996026ab48986bfeeb6e2ddb0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5882605917448085339, guid: 75c5757996026ab48986bfeeb6e2ddb0, type: 3}
-      propertyPath: m_LocalRotation.x
+    - target: {fileID: 5132364929413864887, guid: 75c5757996026ab48986bfeeb6e2ddb0, type: 3}
+      propertyPath: isPlaceble
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5882605917448085339, guid: 75c5757996026ab48986bfeeb6e2ddb0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5882605917448085339, guid: 75c5757996026ab48986bfeeb6e2ddb0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5882605917448085339, guid: 75c5757996026ab48986bfeeb6e2ddb0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6730024127132166670, guid: 75c5757996026ab48986bfeeb6e2ddb0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -72,6 +56,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8751648246507021841, guid: 75c5757996026ab48986bfeeb6e2ddb0, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -2432090755550338912, guid: 626410dc07212d749823da2540a223bb, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
