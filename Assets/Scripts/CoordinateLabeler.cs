@@ -52,17 +52,24 @@ public class CoordinateLabeler : MonoBehaviour
         if(gridManager == null) return;
         Node node = gridManager.GetNode(coordinates);
         if(node == null) return;
+
         if(!node.isWalkable)
         {
             label.color = blockedColor;
-        }else if(node.isPath)
+        }
+        else if(node.isPath)
         {
             label.color = pathColor;
-        }else if(node.isExplored){
+        }
+        else if(node.isExplored)
+        {
             label.color = exploredColor;
-        }else{
+        }
+        else
+        {
             label.color = defaultColor;
         }
+
     }
 
     private void DisplayCoordinates()
