@@ -1,13 +1,3 @@
-# Blender MTL File: 'None'
-# Material Count: 1
-
-newmtl palette.017
-Ns 0.000000
-Ka 1.000000 1.000000 1.000000
-Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.450000
-d 1.000000
-illum 1
-map_Kd Water_Open.png
+version https://git-lfs.github.com/spec/v1
+oid sha256:7566f06ce082030b5aef5150ca871b54e1d42e23874234f76d7cb0f02f21b258
+size 252

@@ -1,13 +1,3 @@
-# Blender MTL File: 'None'
-# Material Count: 1
-
-newmtl palette.009
-Ns 0.000000
-Ka 1.000000 1.000000 1.000000
-Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.450000
-d 1.000000
-illum 1
-map_Kd Shore_3.png
+version https://git-lfs.github.com/spec/v1
+oid sha256:299573a181e2ed1b05cdfc503d0a6a38b36953bc3dd125128d76b0066f210926
+size 249

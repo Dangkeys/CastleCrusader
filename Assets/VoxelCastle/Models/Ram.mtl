@@ -1,13 +1,3 @@
-# Blender MTL File: 'None'
-# Material Count: 1
-
-newmtl palette.002
-Ns 0.000000
-Ka 1.000000 1.000000 1.000000
-Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.450000
-d 1.000000
-illum 1
-map_Kd Ram.png
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f408bfb0ac01e2f5332d16e587cee7e3df36dc8732680bface8377c60f231a2
+size 245

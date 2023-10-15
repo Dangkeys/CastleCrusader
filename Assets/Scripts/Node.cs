@@ -1,17 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-[System.Serializable]
-public class Node
-{
-    public Vector2Int coordinates;
-    public bool isWalkable;
-    public bool isPath;
-    public bool isExplored;
-    public Node connectedTo;
-    public Node(Vector2Int coordinates, bool isWalkable)
-    {
-        this.coordinates = coordinates;
-        this.isWalkable = isWalkable;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:69febc34f8fe1aeec2a8a43b58e088519cc572fe798355e2699f723a36c47cba
+size 414

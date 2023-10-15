@@ -1,31 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Enemy : MonoBehaviour
-{
-    [SerializeField] int goldReward = 20;
-    [SerializeField] int goldPenalty = 20;
-    Bank bank;
-    // Start is called before the first frame update
-    void Start()
-    {
-        bank = FindObjectOfType<Bank>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void RewardGold()
-    {
-        if(bank == null) return;
-        bank.Deposit(goldReward);
-    }
-    public void StealGold()
-    {
-        if(bank == null) return;
-        bank.WithDraw(goldPenalty);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1892c0ee0b2fa64f870f07865e197cfda682a547d176653a230b5fad51702b5c
+size 638
