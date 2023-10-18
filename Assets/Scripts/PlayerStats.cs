@@ -47,7 +47,7 @@ public class PlayerStats : MonoBehaviour
     }
     public void AddCoins()
     {
-        goldReward = Mathf.RoundToInt((float)goldReward * 7 / 5);
+        goldReward = Mathf.RoundToInt((float)goldReward * 6 / 5);
         if (goldReward % 5 != 0)
         {
             goldReward += 5 - (goldReward % 5);
