@@ -1,3 +1,96 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:67b733dc1241804d93c10575d2633f99d6f2b49da74a7f92a62d91df4968db04
-size 1721
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class TowerHealth : MonoBehaviour
+{
+    int maxHealth = 3;
+    AudioSource audioSource;
+    [SerializeField] AudioClip hoverClip;
+    [SerializeField] AudioClip clickClip;
+    [SerializeField] AudioClip denyClip;
+    [SerializeField] int currentHealth;
+    [SerializeField] float loadDelay = 0.5f;
+    public int CurrentHealth { get { return currentHealth; } }
+
+    private string currentSceneName;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+        currentSceneName = SceneManager.GetActiveScene().name;
+    }
+
+    private void Update()
+    {
+        if (currentSceneName == "Game" && Input.GetKeyDown(KeyCode.Escape))
+        {
+            LoadGameOver();
+        }
+    }
+
+    public void Quit()
+    {
+        Debug.Log("Nooooo T_T");
+        Application.Quit();
+    }
+
+    private void Start()
+    {
+        ResetToMaxHealth();
+    }
+
+    public void ResetToMaxHealth()
+    {
+        currentHealth = maxHealth;
+    }
+
+    public void LoadGame()
+    {
+        FindObjectOfType<ScoreKeeper>().ResetScore();
+        ResetToMaxHealth();
+        StartCoroutine(Delay("Game", loadDelay));
+    }
+
+    IEnumerator Delay(string name, float delay)
+    {
+        yield return new WaitForSecondsRealtime(delay);
+        SceneManager.LoadScene(name);
+    }
+
+    public void LoadMainMenu()
+    {
+        StartCoroutine(Delay("MainMenu", loadDelay));
+    }
+
+    public void LoadGameOver()
+    {
+        StartCoroutine(Delay("GameOver", .5f));
+    }
+
+    public void Hurt()
+    {
+        currentHealth--;
+        FindObjectOfType<DisplayUI>().UpdateUI();
+        ProcessGameOver();
+    }
+
+    public void ProcessGameOver()
+    {
+        if (currentHealth <= 0)
+        {
+            LoadGameOver();
+        }
+    }
+
+    public void OnMouseHover()
+    {
+        audioSource.PlayOneShot(hoverClip, 0.5f);
+    }
+
+    public void OnMouseClickMenu()
+    {
+        audioSource.PlayOneShot(clickClip, 0.5f);
+    }
+}
