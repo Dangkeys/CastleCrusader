@@ -26,7 +26,7 @@ public class TowerHealth : MonoBehaviour
     {
         if (currentSceneName == "Game" && Input.GetKeyDown(KeyCode.Escape))
         {
-            LoadGameOver();
+            StartCoroutine(Delay("GameOver", .5f));
         }
     }
 
@@ -66,7 +66,7 @@ public class TowerHealth : MonoBehaviour
 
     public void LoadGameOver()
     {
-        StartCoroutine(Delay("GameOver", .5f));
+        StartCoroutine(Delay("GameOver", 2f));
     }
 
     public void Hurt()
